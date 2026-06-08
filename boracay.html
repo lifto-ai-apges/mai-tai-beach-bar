@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mai Tai Beach Bar Boracay | Sunset Party & Grill beachfront Station 2</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Visit Mai Tai Beach Bar in Station 2 beachfront, Boracay. Enjoy the ultimate sunset party hub, premium signature mango cocktails, fresh seafood grill, and nightly fire dancer spectacles.">
+  <meta name="keywords" content="Mai Tai Boracay, beach bar Boracay, Station 2 beachfront restaurant, Boracay sunset party, Boracay fire dancers, mango cocktails Boracay, seafood grill Boracay">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maitaibeachbar.com/boracay.html">
+  <meta property="og:title" content="Mai Tai Beach Bar Boracay | Sunset Party & Grill beachfront Station 2">
+  <meta property="og:description" content="Experience Boracay's best beach sunset party with signature cocktails, seafood grill, and glowing nightly entertainment right on Station 2 beachfront.">
+  <meta property="og:image" content="assets/images/boracay.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: LocalBusiness & FAQPage (SEO/GEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BarOrRestaurant",
+        "@id": "https://maitaibeachbar.com/boracay.html#localbusiness",
+        "name": "Mai Tai Beach Bar & Restaurant - Boracay",
+        "image": "https://maitaibeachbar.com/assets/images/boracay.png",
+        "url": "https://maitaibeachbar.com/boracay.html",
+        "telephone": "+639179876543",
+        "priceRange": "$$",
+        "servesCuisine": "Filipino Fusion, International, Seafood, Cocktails",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Station 2, Beachfront, Balabag",
+          "addressLocality": "Boracay Island",
+          "addressRegion": "Malay, Aklan",
+          "postalCode": "5608",
+          "addressCountry": "PH"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 11.9593,
+          "longitude": 121.9271
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "11:00",
+            "closes": "00:00"
+          }
+        ],
+        "menu": "https://maitaibeachbar.com/boracay.html#menu"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://maitaibeachbar.com/boracay.html#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is Mai Tai Boracay located?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mai Tai Boracay is situated directly on the beachfront of Station 2, Balabag, Boracay Island, right in the center of the famous white beach, making it highly accessible from nearby hotels."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What time does the sunset party and fire dance show start?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our sunset happy hour begins at 4:00 PM daily. The famous fire dance shows and DJ sessions start at 5:30 PM just as the sun sets over the horizon."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to make a reservation for sunset hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Walk-ins are welcome, but beachfront tables are highly popular during sunset peak hours (4:30 PM - 6:30 PM). We strongly recommend reserving a table online in advance to guarantee the best views."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="main-nav">
+    <a href="index.html" class="logo">
+      MAI TAI <span>Beach Bar & Restaurant</span>
+    </a>
+    <ul class="nav-links" id="nav-menu">
+      <li class="nav-item active"><a href="boracay.html">Boracay</a></li>
+      <li class="nav-item"><a href="port-barton.html">Port Barton</a></li>
+      <li class="nav-item"><a href="siquijor.html">Siquijor</a></li>
+    </ul>
+    <button class="nav-btn open-booking-modal" data-branch="Boracay">Book a Table</button>
+    <button class="hamburger" id="nav-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="branch-hero">
+    <div class="branch-hero-bg" style="background-image: url('assets/images/boracay.png');"></div>
+    <div class="branch-hero-content">
+      <span class="branch-tag">01 / The Sunset Party Hub</span>
+      <h1 class="branch-title">Boracay</h1>
+      <p class="branch-subtitle">Vibrant beachfront beats, sweet mango sunset cocktails, and glowing fire dancer performances right on Station 2.</p>
+    </div>
+  </header>
+
+  <!-- TL;DR Quick Info Bar (GEO-Optimized Card) -->
+  <section class="container">
+    <div class="tldr-bar">
+      <div class="tldr-item">
+        <span class="tldr-label">Location</span>
+        <span class="tldr-value">Station 2 Beachfront, Boracay</span>
+      </div>
+      <div class="tldr-item">
+        <span class="tldr-label">Operating Hours</span>
+        <span class="tldr-value">11:00 AM - 12:00 AM Daily</span>
+      </div>
+      <div class="tldr-item">
+        <span class="tldr-label">Status</span>
+        <span class="tldr-value" id="open-status">Loading hours...</span>
+      </div>
+      <div class="tldr-item">
+        <span class="tldr-label">Phone</span>
+        <span class="tldr-value"><a href="tel:+639179876543">+63 917 987 6543</a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Vibe Section -->
+  <section class="section section-dark">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="section-tag">The Experience</span>
+        <h2 class="section-title">Boracay Beach Vibe</h2>
+        <p>Mai Tai Boracay brings high-energy tropical luxury to the world-famous White Beach. Positioned in the heart of Station 2, our branch is the ultimate gathering spot for beach lovers, cocktail connoisseurs, and sunset chasers.</p>
+        <p>As afternoon turns into evening, feel the transition from laid-back beachside dining to an electric twilight party. Sip on our signature fresh mango drinks, dance to curated house beats from local DJs, and watch our breathtaking nightly fire dance performance right on the sand.</p>
+        
+        <div class="about-features">
+          <div class="feature-card">
+            <svg class="feature-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707M12 5a7 7 0 100 14 7 7 0 000-14z"/></svg>
+            <h4>Sunset Front Row</h4>
+            <p>Direct view of Boracay's world-famous golden sunsets.</p>
+          </div>
+          <div class="feature-card">
+            <svg class="feature-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19V6l12-3v13M9 10l12-3M9 14l12-3M4 19H20"/></svg>
+            <h4>Nightly Beats</h4>
+            <p>Live DJs and fire-spinner shows starting at 5:30 PM daily.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-gallery">
+        <div class="gallery-img wide">
+          <img src="assets/images/boracay.png" alt="Mai Tai Boracay sunset beachfront dining view">
+        </div>
+        <div class="gallery-img">
+          <img src="assets/images/boracay.png" alt="Vibrant tropical cocktails at Mai Tai Boracay">
+        </div>
+        <div class="gallery-img">
+          <img src="assets/images/boracay.png" alt="Beachfront fire performance at Mai Tai Beach Bar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Menu Preview -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fresh & Tropical</span>
+        <h2 class="section-title">Boracay Menu Highlights</h2>
+        <p class="section-desc">Sample our curated selection of fresh seafood, local Filipino beach bites, and premium cocktails handcrafted with fresh local ingredients.</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Cocktails -->
+        <div>
+          <h3 class="menu-category-title">Signature Drinks <span>Crafted Spirits</span></h3>
+          <div class="menu-items-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Mango Mai Tai</h4>
+                <span class="menu-item-price">₱320</span>
+              </div>
+              <p class="menu-item-desc">A tropical twist on the classic. Gold rum, triple sec, fresh Boracay sweet mango puree, lime, and organic almond orgeat syrup.</p>
+              <span class="menu-item-tag">House Favorite</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Calamansi Mojito</h4>
+                <span class="menu-item-price">₱280</span>
+              </div>
+              <p class="menu-item-desc">Vibrant local calamansi lime muddled with fresh mint leaves, white rum, organic sugarcane syrup, topped with sparkling club soda.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sunset Fire</h4>
+                <span class="menu-item-price">₱340</span>
+              </div>
+              <p class="menu-item-desc">Spiced dark rum, passion fruit juice, fresh pineapple juice, grenadine, and a touch of local hot chili salt on the rim.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div>
+          <h3 class="menu-category-title">Beachside Dining <span>Local & Fresh Grill</span></h3>
+          <div class="menu-items-list">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Boracay Chori Burger</h4>
+                <span class="menu-item-price">₱260</span>
+              </div>
+              <p class="menu-item-desc">Two grilled sweet and spicy chorizo patties, topped with local banana ketchup, pickled onions, served in a warm brioche bun.</p>
+              <span class="menu-item-tag">Island Classic</span>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Grilled Seafood Platter</h4>
+                <span class="menu-item-price">₱850</span>
+              </div>
+              <p class="menu-item-desc">Freshly caught prawns, calamari, and yellowfin tuna belly grilled over coconut charcoal, served with garlic butter soy sauce dip.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sizzling Pork Sisig</h4>
+                <span class="menu-item-price">₱380</span>
+              </div>
+              <p class="menu-item-desc">Finely chopped crispy pork face, onions, and chili peppers served on a sizzling hot plate with a fresh local egg and calamansi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Map & Contact -->
+  <section class="section section-dark">
+    <div class="container contact-grid">
+      <!-- Contact Information -->
+      <div class="contact-info-list">
+        <div>
+          <span class="section-tag">Come Visit Us</span>
+          <h2 class="section-title">Boracay Location Info</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 2rem;">Stop by for lunch, dinner, or late-night cocktails. We are situated directly on the main beach path in Station 2, making us easy to find from any point on the beach.</p>
+        </div>
+        
+        <div class="info-item-box">
+          <div class="info-icon-wrapper">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div class="info-details">
+            <h4>Address</h4>
+            <p>Station 2 Beachfront, Barangay Balabag,</p>
+            <p>Boracay Island, Malay, Aklan, 5608, Philippines</p>
+          </div>
+        </div>
+
+        <div class="info-item-box">
+          <div class="info-icon-wrapper">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <div class="info-details">
+            <h4>Contact Info</h4>
+            <p>Reservations & Inquiries: <a href="tel:+639179876543">+63 917 987 6543</a></p>
+            <p>Email: <a href="mailto:boracay@maitaibeachbar.com">boracay@maitaibeachbar.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Block -->
+      <div class="map-card">
+        <div class="map-embed">
+          <div class="map-placeholder-content">
+            <svg class="map-placeholder-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m5 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            <h4>Boracay Beachfront Map</h4>
+            <p>Coordinates: 11.9593° N, 121.9271° E (Station 2)</p>
+            <button class="map-placeholder-btn" onclick="window.open('https://maps.google.com/?q=11.9593,121.9271')">Open in Google Maps</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (GEO/RAG-Optimized) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Boracay Branch FAQs</h2>
+        <p class="section-desc">Everything you need to know about directions, reservation policies, and entertainment at our Boracay location.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I get to Mai Tai Boracay?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              We are located right on the beachfront pathway of Station 2, Barangay Balabag. If you're walking along the beach, we are situated between D'Mall and Station 3. Any tricycle driver can take you to the Station 2 beachfront access path near Hennan Regent, and we are just a short 2-minute walk from the main road.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What time does the sunset party and fire dance show start?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Our sunset happy hour begins at 4:00 PM daily. The famous fire dance shows and DJ sessions start at 5:30 PM just as the sun sets over the horizon.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need to make a reservation for sunset hours?</span>
+            <svg class="faq-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Walk-ins are welcome, but beachfront tables are highly popular during sunset peak hours (4:30 PM - 6:30 PM). We strongly recommend reserving a table online in advance to guarantee the best views.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">MAI TAI</a>
+        <p class="footer-desc">Premium beach bars in the Philippines' most beautiful island destinations: Boracay, Port Barton, and Siquijor.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul class="footer-links">
+          <li><a href="boracay.html">Boracay</a></li>
+          <li><a href="port-barton.html">Port Barton</a></li>
+          <li><a href="siquijor.html">Siquijor</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Main Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="boracay.html#menu">Our Menu</a></li>
+          <li><a href="#" class="open-booking-modal">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-links">
+          <li><a href="tel:+639171234567">+63 917 123 4567</a></li>
+          <li><a href="mailto:hello@maitaibeachbar.com">hello@maitaibeachbar.com</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mai Tai Beach Bar & Restaurant. All rights reserved.</p>
+      <div class="footer-policy-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Booking Button -->
+  <button class="floating-booking-btn open-booking-modal" data-branch="Boracay">
+    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+    Book a Table
+  </button>
+
+  <!-- Reservation Modal -->
+  <div class="modal" id="booking-modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal" aria-label="Close Modal">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      
+      <!-- Form State -->
+      <form id="reservation-form">
+        <div class="modal-header">
+          <h3>Reserve A Table</h3>
+          <p>Book your spot in paradise. Select your preferred branch below.</p>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label" for="book-branch">Select Beach Bar Branch</label>
+          <select class="form-control" id="book-branch" name="branch" required>
+            <option value="Boracay" selected>Mai Tai Boracay (Station 2)</option>
+            <option value="Port Barton">Mai Tai Port Barton (Itaytay Beach)</option>
+            <option value="Siquijor">Mai Tai Siquijor (San Juan Cliffside)</option>
+          </select>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="book-date">Date</label>
+            <input type="date" class="form-control" id="book-date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="book-time">Time</label>
+            <select class="form-control" id="book-time" name="time" required>
+              <option value="" disabled selected>Select time...</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="4:00 PM">4:00 PM (Pre-Sunset)</option>
+              <option value="5:30 PM">5:30 PM (Sunset Peak)</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="8:30 PM">8:30 PM</option>
+              <option value="10:00 PM">10:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="book-guests">Guests</label>
+            <select class="form-control" id="book-guests" name="guests" required>
+              <option value="2" selected>2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="6">6 People</option>
+              <option value="8">8+ People (Group)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="book-phone">Phone Number</label>
+            <input type="tel" class="form-control" id="book-phone" name="phone" placeholder="+63 917..." required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="book-name">Full Name</label>
+          <input type="text" class="form-control" id="book-name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="book-email">Email Address</label>
+          <input type="email" class="form-control" id="book-email" name="email" placeholder="john@example.com" required>
+        </div>
+
+        <button type="submit" class="form-submit-btn">Confirm Reservation</button>
+      </form>
+
+      <!-- Success State -->
+      <div class="form-success-state" id="success-state">
+        <div class="success-icon">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h4>Booking Confirmed!</h4>
+        <p>Your table in paradise is reserved. We sent a confirmation email to <strong id="success-email">john@example.com</strong>. See you soon!</p>
+        <button class="form-submit-btn" id="success-close-btn" style="margin-top: 2rem;">Awesome</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
