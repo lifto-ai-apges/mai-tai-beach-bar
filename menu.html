@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mai Tai Beach Bar & Restaurant | Our Menu</title>
+  <meta name="description" content="Explore the menus of Mai Tai Beach Bar across our locations in Boracay, Port Barton, and Siquijor. Handcrafted cocktails, fresh seafood grill, and tropical beachside snacks.">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="main-nav">
+    <a href="index.html" class="logo">
+      MAI TAI <span>Beach Bar & Restaurant</span>
+    </a>
+    <ul class="nav-links" id="nav-menu">
+      <li class="nav-item"><a href="index.html">Home</a></li>
+      <li class="nav-item active"><a href="menu.html">Menu</a></li>
+      <li class="nav-item"><a href="boracay.html">Boracay</a></li>
+      <li class="nav-item"><a href="port-barton.html">Port Barton</a></li>
+      <li class="nav-item"><a href="siquijor.html">Siquijor</a></li>
+    </ul>
+    <button class="nav-btn open-booking-modal">Book a Table</button>
+    <button class="hamburger" id="nav-toggle" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="branch-hero" style="height: 40vh; min-height: 300px;">
+    <div class="branch-hero-bg" style="background-image: url('assets/images/boracay.png'); filter: brightness(0.4);"></div>
+    <div class="branch-hero-content">
+      <span class="branch-tag">SIP & DINE IN PARADISE</span>
+      <h1 class="branch-title" style="font-size: 4rem;">Our Menu</h1>
+      <p class="branch-subtitle" style="font-size: 1.1rem;">Handcrafted tropical cocktails, fresh sea-to-table seafood, and local island favorites.</p>
+    </div>
+  </header>
+
+  <!-- Menu Controls Section -->
+  <section class="section section-dark" style="padding-top: 4rem; padding-bottom: 2rem;">
+    <div class="container menu-controls">
+      <!-- Location Selector -->
+      <div class="menu-location-selector">
+        <button class="menu-loc-btn is-active" data-location="boracay">Boracay</button>
+        <button class="menu-loc-btn" data-location="port-barton">Port Barton</button>
+        <button class="menu-loc-btn" data-location="siquijor">Siquijor</button>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-category-tabs">
+        <button class="menu-tab-btn is-active" data-category="signature">Signature Cocktails</button>
+        <button class="menu-tab-btn" data-category="classics">Classics, Beer & Wine</button>
+        <button class="menu-tab-btn" data-category="mains">Mains & Burgers</button>
+        <button class="menu-tab-btn" data-category="snacks">Snacks & Pica Pica</button>
+        <button class="menu-tab-btn" data-category="desserts">Shakes & Desserts</button>
+        <button class="menu-tab-btn" data-category="experiences">Experiences & More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Content Section -->
+  <section class="section section-dark" style="padding-top: 0;">
+    <div class="container">
+
+      <!-- ==============================================
+           BORACAY BRANCH MENU WRAPPER
+           ============================================== -->
+      <div class="menu-location-wrapper is-active" data-location="boracay">
+        
+        <!-- Signature Cocktails -->
+        <div class="menu-tab-content is-active" data-category="signature">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sexy Colada</h4><span class="menu-item-price">₱440</span></div>
+                <p class="menu-item-desc">White rum, overproof rum, coconut puree, pineapple juice.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Wet Paradise</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Dark rum, mezcal, peach puree, passionfruit puree, lime, orgeat.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Babaero</h4><span class="menu-item-price">₱400</span></div>
+                <p class="menu-item-desc">White rum, pale ale syrup, lime, pineapple juice, peach and rosemary jam.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Let's Party In Your Mouth</h4><span class="menu-item-price">₱440</span></div>
+                <p class="menu-item-desc">Dark rum, silver tequila, mango liqueur, passionfruit puree, citrus, pandan.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Kama Sutra</h4><span class="menu-item-price">₱480</span></div>
+                <p class="menu-item-desc">White rum, dark rum, overproof rum, house falernum, passionfruit puree, citrus, pineapple juice.</p>
+                <span class="menu-item-tag">Strong & Warning!</span>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mai Tai</h4><span class="menu-item-price">₱380</span></div>
+                <p class="menu-item-desc">Dark rum, light rum, triple sec, lime, pineapple juice, orgeat.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mai "Jack" Tai</h4><span class="menu-item-price">₱380</span></div>
+                <p class="menu-item-desc">Jack Daniel's, dark rum, spiced rum, apricot liqueur, jackfruit puree, pineapple juice, lime.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Aloha Sangria</h4><span class="menu-item-price">₱360</span></div>
+                <p class="menu-item-desc">White rum, strawberry puree, cinnamon, red wine.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sex With The Captain</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Light rum, overproof rum, apricot liqueur, strawberry puree, lime, cranberry juice.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Coconut Aged Negroni</h4><span class="menu-item-price">₱450</span></div>
+                <p class="menu-item-desc">Dark rum, sweet vermouth, Campari, infused with toasted coconut flakes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Classics, Beer & Wine -->
+        <div class="menu-tab-content" data-category="classics">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Classic Cocktails <span>₱380 Each</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Margarita</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Mojito</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Amaretto Sour</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Negroni</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Old Fashioned</h4></div></div>
+              
+              <h3 class="menu-category-title" style="margin-top: 2rem;">Spritz O'Clock <span>₱380 Each</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Romeo Licks Juliet</h4><p class="menu-item-desc">Peach liqueur, aperitivo, prosecco.</p></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">S*ck My Berry</h4><p class="menu-item-desc">Blackcurrant liqueur, bitter scuro, prosecco.</p></div></div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Ice-Cold Beer <span>From ₱125</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">San Miguel Light</h4><span class="menu-item-price">₱125</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">San Miguel Pale Pilsen</h4><span class="menu-item-price">₱125</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Red Horse</h4><span class="menu-item-price">₱125</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Corona</h4><span class="menu-item-price">₱220</span></div></div>
+              
+              <h3 class="menu-category-title" style="margin-top: 2rem;">Wine <span>By the Glass / Bottle</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Prosecco, Millesimato</h4><span class="menu-item-price">₱350 / ₱1,500</span></div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">House White / Red</h4><span class="menu-item-price">₱1,500 Bottle</span></div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Lionel Osmin Rose</h4><span class="menu-item-price">₱1,800 Bottle</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains & Burgers -->
+        <div class="menu-tab-content" data-category="mains">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Burgers & Sandwiches <span>With Fries</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mai Tai Burger</h4><span class="menu-item-price">₱450</span></div>
+                <p class="menu-item-desc">Our signature premium beef patty, cheddar, pineapple slice, bacon, crispy lettuce, onions.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Beef Burger</h4><span class="menu-item-price">₱420</span></div>
+                <p class="menu-item-desc">Classic grilled beef patty, lettuce, tomato, cheese, special house burger sauce.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Adobo Burger</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Savory shredded pork adobo glaze patty with pickled papaya (atchara) in a brioche bun.</p>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Main Courses <span>Island Specialties</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mai Tai Fish & Chips</h4><span class="menu-item-price">₱430</span></div>
+                <p class="menu-item-desc">Crispy beer-battered fish fillets served with golden french fries and garlic aioli dip.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Island Ceviche</h4><span class="menu-item-price">₱430</span></div>
+                <p class="menu-item-desc">Freshly caught Tanigue fish cured in lime and vinegar, mixed with ginger, onions, chilies, and coconut milk.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Pork Sisig</h4><span class="menu-item-price">₱380</span></div>
+                <p class="menu-item-desc">Finely chopped crispy pork mask and ears, seasoned with onion, chili, calamansi, on a sizzling hot plate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snacks & Pica Pica -->
+        <div class="menu-tab-content" data-category="snacks">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Pica Pica <span>Bar Bites</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sisig Calamari Tostadas</h4><span class="menu-item-price">₱420</span></div>
+                <p class="menu-item-desc">Crispy tostada shells topped with sizzling calamari sisig, garlic cream, onion, cilantro.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Stuffed Calamari with Aioli</h4><span class="menu-item-price">₱450</span></div>
+                <p class="menu-item-desc">Whole grilled calamari stuffed with tomato, onion, and herbs, served with garlic aioli.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Coco Chicken Skewers</h4><span class="menu-item-price">₱400</span></div>
+                <p class="menu-item-desc">Tender chicken skewers marinated in coconut milk and spices, grilled to perfection.</p>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">To Share... Or Not <span>Platters</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Tiki Sisig Nachos</h4><span class="menu-item-price">₱350</span></div>
+                <p class="menu-item-desc">Crispy tortilla chips topped with pork sisig, liquid cheese, jalapeños, onions, sour cream.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Lemongrass Chicken Wings</h4><span class="menu-item-price">₱330</span></div>
+                <p class="menu-item-desc">Crispy chicken wings tossed in a sweet and tangy lemongrass garlic glaze.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Pork Dynamite</h4><span class="menu-item-price">₱320</span></div>
+                <p class="menu-item-desc">Green chilies stuffed with seasoned ground pork and cheese, wrapped in spring roll wrapper, fried crispy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shakes & Desserts -->
+        <div class="menu-tab-content" data-category="desserts">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Desserts <span>Sweet Paradise</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Pirate Fruit Platter with Rum</h4><span class="menu-item-price">₱350</span></div>
+                <p class="menu-item-desc">Fresh tropical seasonal fruits served with a warm, rum-infused caramel dipping sauce.</p>
+              </div>
+            </div>
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Got Rice? <span>Sides</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Plain Rice</h4><span class="menu-item-price">₱30</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Garlic Rice</h4><span class="menu-item-price">₱50</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiences (None for Boracay, standard notice) -->
+        <div class="menu-tab-content" data-category="experiences">
+          <div style="text-align: center; padding: 4rem 2rem;">
+            <svg style="width: 60px; height: 60px; color: var(--primary-gold); margin-bottom: 1.5rem;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.286L13 21l-2.286-5.714L5 13l5.714-2.286L13 3z"/></svg>
+            <h3 style="font-size: 1.5rem; text-transform: uppercase; margin-bottom: 0.5rem;">Boracay Happenings</h3>
+            <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">Join us for nightly fire dancer shows and local DJ sessions starting at 5:30 PM. No bookings needed for the show, just walk right in!</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==============================================
+           PORT BARTON BRANCH MENU WRAPPER
+           ============================================== -->
+      <div class="menu-location-wrapper" data-location="port-barton">
+        
+        <!-- Signature Cocktails -->
+        <div class="menu-tab-content is-active" data-category="signature">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sexy Colada</h4><span class="menu-item-price">₱380</span></div>
+                <p class="menu-item-desc">White rum, dark rum, coconut cream, pineapple juice.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Kama Sutra</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Dark rum, passionfruit puree, citrus, pineapple juice.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mai Tai</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Dark & light rum, triple sec, lime, pineapple juice, almond orgeat.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sip Sip Tinggil</h4><span class="menu-item-price">₱540</span></div>
+                <p class="menu-item-desc">Sharing portion: dark rum, tequila, pastis, mango puree, citrus, pineapple.</p>
+                <span class="menu-item-tag">Sharing Drink</span>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Margarita</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Tequila, triple sec, lime, organic cane sugar.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Amaretto Sour</h4><span class="menu-item-price">₱380</span></div>
+                <p class="menu-item-desc">Amaretto liqueur, freshly squeezed lemon juice, egg white.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mango Daiquiri</h4><span class="menu-item-price">₱420</span></div>
+                <p class="menu-item-desc">Rum, fresh sweet Palawan mango, lime, organic sugar.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Watermelon Daiquiri</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Rum, fresh local watermelon, lime, sugar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Classics, Beer & Wine -->
+        <div class="menu-tab-content" data-category="classics">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Spirits <span>Priced Per Shot</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Planteray Original Dark Rum</h4><span class="menu-item-price">₱220</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Planteray OFTD Overproof Rum</h4><span class="menu-item-price">₱330</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Plantation XO Rum</h4><span class="menu-item-price">₱500</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Patron Silver Tequila</h4><span class="menu-item-price">₱300</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Hendrick's Gin</h4><span class="menu-item-price">₱320</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Glenfiddich 12yrs Whisky</h4><span class="menu-item-price">₱450</span></div></div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Beer <span>Cold Bottles</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">San Miguel Light / Pale / Apple</h4><span class="menu-item-price">₱110</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Red Horse</h4><span class="menu-item-price">₱110</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Corona</h4><span class="menu-item-price">₱200</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Mai Tai Pale Ale</h4><span class="menu-item-price">₱240</span></div></div>
+              
+              <h3 class="menu-category-title" style="margin-top: 2rem;">Wine <span>European Bottles</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Prosecco, Millesimato</h4><span class="menu-item-price">₱1,200</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">La Vie en Rose (Rose)</h4><span class="menu-item-price">₱1,200</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Conquesta White (Chardonnay)</h4><span class="menu-item-price">₱1,200</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains & Burgers -->
+        <div class="menu-tab-content" data-category="mains">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Mains <span>With Rice, Quinoa or Fries</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Spicy BBQ Marinated Pork</h4><span class="menu-item-price">₱360</span></div>
+                <p class="menu-item-desc">Pork ribs or shoulder marinated in a blend of honey, soy, and chilies, grilled over hot charcoal.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">BBQ Chicken Teriyaki</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Flame-grilled chicken thigh glazed with teriyaki sauce, caramelized and served with fresh greens.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Chicken Cordon Bleu</h4><span class="menu-item-price">₱480</span></div>
+                <p class="menu-item-desc">Crispy breaded chicken breast stuffed with smoked ham and melted cheese, served with white cream sauce.</p>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Fresh Catch & Specials <span>Local Port Barton Sea</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Grilled Fish</h4><span class="menu-item-price">₱420</span></div>
+                <p class="menu-item-desc">Freshly caught whole snapper, seasoned with garlic, lemon and herbs, charcoal-grilled. Served with salad.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Tropical BBQ Lobster (500g)</h4><span class="menu-item-price">₱1,980</span></div>
+                <p class="menu-item-desc">Fresh whole lobster glazed with garlic citrus butter, cooked over open charcoal. Beach luxury style.</p>
+                <span class="menu-item-tag">Premium Fresh Catch</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Happy Kids Meal</h4><span class="menu-item-price">₱220</span></div>
+                <p class="menu-item-desc">Golden chicken nuggets served with crispy french fries and ketchup dip.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snacks & Pica Pica -->
+        <div class="menu-tab-content" data-category="snacks">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Appetizers <span>Snacks</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Veggie Lumpia</h4><span class="menu-item-price">₱340</span></div>
+                <p class="menu-item-desc">Deep-fried vegetable spring rolls served with local spiced vinegar dip.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Calamares</h4><span class="menu-item-price">₱340</span></div>
+                <p class="menu-item-desc">Crispy deep-fried squid rings served with garlic dipping sauce.</p>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Simple Bites <span>Sides</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Chicken Fingers</h4><span class="menu-item-price">₱320</span></div>
+                <p class="menu-item-desc">Crispy breaded chicken strips served with honey mustard sauce.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">French Fries</h4><span class="menu-item-price">₱190</span></div>
+                <p class="menu-item-desc">Thick-cut golden salted potato fries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shakes & Desserts -->
+        <div class="menu-tab-content" data-category="desserts">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Fresh Fruit Shakes <span>₱240 Each</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Calamansi Shake</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Mango Shake</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Watermelon Shake</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Pineapple Shake</h4></div></div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Fresh Coconut <span>Healthy & Cold</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Fresh Coconut Shake</h4><span class="menu-item-price">₱240</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Fresh Coconut Juice (Whole Fruit)</h4><span class="menu-item-price">₱200</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Banana Shake</h4><span class="menu-item-price">₱240</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiences (Port Barton tours, smoke) -->
+        <div class="menu-tab-content" data-category="experiences">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Island Hopping Boat Tours <span>Departing from Mai Tai</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sharing Boat Tour</h4><span class="menu-item-price">₱2,099 / person</span></div>
+                <p class="menu-item-desc">Full day group tour (9am-4pm) to Turtle Spot, Paradise Island, Twin Reef, Sandbar. Includes guide, lunch, snorkeling mask, eco tax.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Private Boat Tour</h4><span class="menu-item-price">₱3,950 / person</span></div>
+                <p class="menu-item-desc">Exclusive private full day tour. Includes all sharing tour stops plus Capsalay reef, drone shots/video, dinner and sunset drinks back at Mai Tai!</p>
+                <span class="menu-item-tag">Highly Recommended</span>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Shisha & Smokes <span>Vibes</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Premium Shisha Hookah</h4><span class="menu-item-price">₱890</span></div>
+                <p class="menu-item-desc">Multiple flavors (Double Apple, Mint, Watermelon) served at your table.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Pack of Cigarettes</h4><span class="menu-item-price">₱300</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==============================================
+           SIQUIJOR BRANCH MENU WRAPPER
+           ============================================== -->
+      <div class="menu-location-wrapper" data-location="siquijor">
+        
+        <!-- Signature Cocktails -->
+        <div class="menu-tab-content is-active" data-category="signature">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sexy Colada</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Planteray 3 Stars rum, Planteray overproof rum, coconut puree, pineapple juice.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Babaero</h4><span class="menu-item-price">₱360</span></div>
+                <p class="menu-item-desc">Planteray 3 Stars rum, pale ale syrup, lime, pineapple juice, peach.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Let's Party In Your Mouth</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Planteray dark rum, Arette blanco tequila, mango liqueur, passionfruit, pandan.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Kama Sutra</h4><span class="menu-item-price">₱450</span></div>
+                <p class="menu-item-desc">Planteray 3 Stars rum, Planteray dark rum, Planteray overproof, falernum, passionfruit, lime, pineapple juice.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sip Sip Tinggil</h4><span class="menu-item-price">₱900</span></div>
+                <p class="menu-item-desc">Sharing size: Planteray dark rum, overproof rum, pastis, passionfruit, pandan, pineapple juice.</p>
+                <span class="menu-item-tag">Sharing Drink</span>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mai Tai</h4><span class="menu-item-price">₱380</span></div>
+                <p class="menu-item-desc">Planteray dark rum, Luxardo Amaretto, triple sec, lime, pineapple, orgeat.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Aloha Sangria</h4><span class="menu-item-price">₱350</span></div>
+                <p class="menu-item-desc">Planteray 3 Stars rum, strawberry, cinnamon, red wine.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sex With The Captain</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Planteray 3 Stars rum, Planteray dark rum, apricot liqueur, strawberry, lime, cranberry.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Coconut Aged Negroni</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Planteray dark rum, Mancino Vermouth Rosso, Rinomato Bitter Scuro, pandan.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Sit On My Face</h4><span class="menu-item-price">₱380</span></div>
+                <p class="menu-item-desc">Widges gin, raspberry lime, basil, egg white.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Classics, Beer & Wine -->
+        <div class="menu-tab-content" data-category="classics">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Classic Cocktails <span>₱380 Each</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Margarita</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Mojito</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Amaretto Sour</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Singapore Sling</h4></div></div>
+              
+              <h3 class="menu-category-title" style="margin-top: 2rem;">Spritz <span>₱390 Each</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Romeo Licks Juliet</h4><p class="menu-item-desc">Lortron Melon Liqueur, Luxardo apertivo, prosecco.</p></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">S*ck My Berry</h4><p class="menu-item-desc">Cartron blueberry liqueur, Luxardo Rosso bitter, prosecco.</p></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">The Pornstar</h4><p class="menu-item-desc">Vodka, passionfruit puree, prosecco.</p></div></div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Local Craft & Import Beer</h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Corona</h4><span class="menu-item-price">₱136</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Mai Tai Pale Ale Beach Beer</h4><span class="menu-item-price">₱180</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Hoegaarden Rosée</h4><span class="menu-item-price">₱220</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Engkanto Mango Nation Hazy IPA</h4><span class="menu-item-price">₱300</span></div></div>
+              
+              <h3 class="menu-category-title" style="margin-top: 2rem;">Wine <span>By the glass / Bottle</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Prosecco Sparking</h4><span class="menu-item-price">₱350 / ₱1,290</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Conquesta White/Red (Glass)</h4><span class="menu-item-price">₱270 / ₱990</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Chateau Gantonnet White/Red</h4><span class="menu-item-price">₱1,600 Bottle</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains & Burgers -->
+        <div class="menu-tab-content" data-category="mains">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Mains <span>International & Fusion</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Fish & Chips</h4><span class="menu-item-price">₱490</span></div>
+                <p class="menu-item-desc">Beer-battered fish fillets, golden fries, tartar sauce, lemon wedges.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Wagyu Beef Burger</h4><span class="menu-item-price">₱640</span></div>
+                <p class="menu-item-desc">Wagyu beef, Emmental cheese, lettuce, tomato, pickles, truffle sauce, served with fries.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Truffle Carbonara Spaghetti</h4><span class="menu-item-price">₱550</span></div>
+                <p class="menu-item-desc">Classic creamy sauce with bacon, parmesan, black pepper, and black truffle oil.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Penne Arrabbiata</h4><span class="menu-item-price">₱490</span></div>
+                <p class="menu-item-desc">Spicy tomato sauce with garlic, chili, parmesan.</p>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Entrees <span>Premium Grill</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Grilled Striploin Steak</h4><span class="menu-item-price">₱1,990</span></div>
+                <p class="menu-item-desc">US Beef striploin, served with chimichurri sauce and golden fries.</p>
+                <span class="menu-item-tag">Premium Meat</span>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Catch of the Day</h4><span class="menu-item-price">₱560</span></div>
+                <p class="menu-item-desc">Pan-seared market fresh fish, lemon butter sauce, seasonal quinoa salad.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Pork Curry</h4><span class="menu-item-price">₱460</span></div>
+                <p class="menu-item-desc">Slow-cooked tender pork in aromatic coconut curry sauce, served with steamed rice.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Tapa Rice Bowl</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Garlic rice, sunny-side egg, beef tapa, papaya atchara.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snacks & Pica Pica -->
+        <div class="menu-tab-content" data-category="snacks">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Appetizers & Salads <span>Crispy & Fresh</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Caesar Salad</h4><span class="menu-item-price">₱390</span></div>
+                <p class="menu-item-desc">Lettuce, parmesan, multigrain croutons, anchovy dressing. (Add chicken +60, prawns +90)</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Ceviche</h4><span class="menu-item-price">₱480</span></div>
+                <p class="menu-item-desc">Fresh catch cured in coconut-calamansi leche de tigre, red onion, cucumber, chili, cilantro.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Tuna Poke Bowl</h4><span class="menu-item-price">₱510</span></div>
+                <p class="menu-item-desc">Yellowfin tuna, rice, espelette dressing, cucumber, carrots, mango, sesame seeds. (Sub quinoa +50)</p>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Snacks <span>Comfort Food</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Chicken Popcorn</h4><span class="menu-item-price">₱370</span></div>
+                <p class="menu-item-desc">Spicy-sweet glaze, sesame seeds, green scallions.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Mai Tai Chicken Wings</h4><span class="menu-item-price">₱590</span></div>
+                <p class="menu-item-desc">Crispy fried chicken wings with choice of Buffalo sauce or Honey garlic sauce.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Corn Okoy</h4><span class="menu-item-price">₱340</span></div>
+                <p class="menu-item-desc">Fritters made of sweet corn, carrots, green papaya, scallions, served with spiced vinegar dip.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shakes & Desserts -->
+        <div class="menu-tab-content" data-category="desserts">
+          <div class="menu-grid">
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Desserts <span>Sweet Siquijor</span></h3>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Coconut Brulee</h4><span class="menu-item-price">₱290</span></div>
+                <p class="menu-item-desc">Creamy rich coconut custard with a hard caramelized sugar crust on top.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><h4 class="menu-item-name">Chocolate Mousse</h4><span class="menu-item-price">₱250</span></div>
+                <p class="menu-item-desc">Grilled pineapple topping over a rich whipped chocolate mousse cream.</p>
+              </div>
+            </div>
+            
+            <div class="menu-items-list">
+              <h3 class="menu-category-title">Fruit Shakes & Tea <span>₱240 Each</span></h3>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Mango / Banana / Pineapple / Watermelon Shake</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Mixed Fruits Shake</h4></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Lemon Iced Tea</h4><span class="menu-item-price">₱220</span></div></div>
+              <div class="menu-item"><div class="menu-item-header"><h4 class="menu-item-name">Very Berry / Tropical Iced Tea</h4><span class="menu-item-price">₱260</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experiences (Siquijor) -->
+        <div class="menu-tab-content" data-category="experiences">
+          <div style="text-align: center; padding: 4rem 2rem;">
+            <svg style="width: 60px; height: 60px; color: var(--primary-gold); margin-bottom: 1.5rem;" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 19V6l12-3v13M9 10l12-3M9 14l12-3M4 19H20"/></svg>
+            <h3 style="font-size: 1.5rem; text-transform: uppercase; margin-bottom: 0.5rem;">Siquijor Acoustics</h3>
+            <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">Join us for Sunset Acoustic Twilight sessions every weekday from 5:00 PM to 7:00 PM. Weekend live bands and fire performances on Friday & Saturday nights.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">MAI TAI</a>
+        <p class="footer-desc">Premium beach bars in the Philippines' most beautiful island destinations: Boracay, Port Barton, and Siquijor.</p>
+      </div>
+      
+      <div class="footer-col">
+        <h5>Locations</h5>
+        <ul class="footer-links">
+          <li><a href="boracay.html">Boracay</a></li>
+          <li><a href="port-barton.html">Port Barton</a></li>
+          <li><a href="siquijor.html">Siquijor</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Main Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="#" class="open-booking-modal">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-links">
+          <li><a href="tel:+639171234567">+63 917 123 4567</a></li>
+          <li><a href="mailto:hello@maitaibeachbar.com">hello@maitaibeachbar.com</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mai Tai Beach Bar & Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Reservation Modal -->
+  <div class="modal" id="booking-modal">
+    <!-- Same Modal Structure for unified reservations -->
+    <div class="modal-content">
+      <button class="modal-close" id="close-modal" aria-label="Close Modal">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <form id="reservation-form">
+        <div class="modal-header">
+          <h3>Reserve A Table</h3>
+          <p>Book your spot in paradise. Select your preferred branch below.</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="book-branch">Select Beach Bar Branch</label>
+          <select class="form-control" id="book-branch" name="branch" required>
+            <option value="" disabled selected>Choose a location...</option>
+            <option value="Boracay">Mai Tai Boracay (Station 2)</option>
+            <option value="Port Barton">Mai Tai Port Barton (Itaytay Beach)</option>
+            <option value="Siquijor">Mai Tai Siquijor (San Juan Cliffside)</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="book-date">Date</label>
+            <input type="date" class="form-control" id="book-date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="book-time">Time</label>
+            <select class="form-control" id="book-time" name="time" required>
+              <option value="" disabled selected>Select time...</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="4:00 PM">4:00 PM (Pre-Sunset)</option>
+              <option value="5:30 PM">5:30 PM (Sunset Peak)</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="8:30 PM">8:30 PM</option>
+              <option value="10:00 PM">10:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="book-guests">Guests</label>
+            <select class="form-control" id="book-guests" name="guests" required>
+              <option value="2" selected>2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="6">6 People</option>
+              <option value="8">8+ People (Group)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="book-phone">Phone Number</label>
+            <input type="tel" class="form-control" id="book-phone" name="phone" placeholder="+63 917..." required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="book-name">Full Name</label>
+          <input type="text" class="form-control" id="book-name" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="book-email">Email Address</label>
+          <input type="email" class="form-control" id="book-email" name="email" placeholder="john@example.com" required>
+        </div>
+        <button type="submit" class="form-submit-btn">Confirm Reservation</button>
+      </form>
+      <div class="form-success-state" id="success-state">
+        <div class="success-icon">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h4>Booking Confirmed!</h4>
+        <p>Your table in paradise is reserved. We sent a confirmation email to <strong id="success-email">john@example.com</strong>. See you soon!</p>
+        <button class="form-submit-btn" id="success-close-btn" style="margin-top: 2rem;">Awesome</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

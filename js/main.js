@@ -200,4 +200,41 @@ document.addEventListener('DOMContentLoaded', () => {
       statusEl.innerHTML = `<span style="color: #ef4444; font-weight: 600;">Closed</span> • Opens at 11:00 AM`;
     }
   }
+
+  // 6. Menu Location Switching and Category Tabs
+  const locButtons = document.querySelectorAll('.menu-loc-btn');
+  const tabButtons = document.querySelectorAll('.menu-tab-btn');
+  const locWrappers = document.querySelectorAll('.menu-location-wrapper');
+  
+  if (locButtons.length > 0 || tabButtons.length > 0) {
+    locButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetLoc = btn.getAttribute('data-location');
+        locButtons.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        locWrappers.forEach(wrap => {
+          if (wrap.getAttribute('data-location') === targetLoc) {
+            wrap.classList.add('is-active');
+          } else {
+            wrap.classList.remove('is-active');
+          }
+        });
+      });
+    });
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetCat = btn.getAttribute('data-category');
+        tabButtons.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        document.querySelectorAll('.menu-tab-content').forEach(panel => {
+          if (panel.getAttribute('data-category') === targetCat) {
+            panel.classList.add('is-active');
+          } else {
+            panel.classList.remove('is-active');
+          }
+        });
+      });
+    });
+  }
 });
