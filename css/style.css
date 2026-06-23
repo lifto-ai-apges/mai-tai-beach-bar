@@ -619,6 +619,21 @@ img {
   height: 200px;
 }
 
+/* Portrait-friendly editorial gallery (real phone photos are vertical):
+   one tall feature tile on the left + two stacked tiles on the right. */
+.about-gallery {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 215px);
+}
+.about-gallery .gallery-img {
+  height: 100%;
+}
+.about-gallery .gallery-img.wide {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  height: 100%;
+}
+
 /* Digital Menu Section */
 .menu-grid {
   display: grid;
@@ -1827,5 +1842,43 @@ body.has-promo .navbar {
   color: var(--bg-dark);
   border-color: transparent;
   box-shadow: 0 5px 15px rgba(255, 94, 54, 0.3);
+}
+
+/* ─── Real brand emblem (carved tiki roundel) in the navbar ─── */
+.navbar .logo::before {
+  content: '';
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: url('../assets/images/logo-emblem.png') center/cover;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+/* Keep the portrait gallery readable on tablet/mobile */
+@media (max-width: 992px) {
+  .about-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .about-gallery .gallery-img {
+    height: 230px;
+  }
+  .about-gallery .gallery-img.wide {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    height: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .logo::before {
+    width: 32px;
+    height: 32px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
 }
 
