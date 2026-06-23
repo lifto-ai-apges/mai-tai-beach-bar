@@ -27,83 +27,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Reservation Modal Logic
-  const modal = document.getElementById('booking-modal');
-  const openButtons = document.querySelectorAll('.open-booking-modal');
-  const closeButton = document.getElementById('close-modal');
-  const form = document.getElementById('reservation-form');
-  const successState = document.getElementById('success-state');
-  const successEmail = document.getElementById('success-email');
-  const successCloseBtn = document.getElementById('success-close-btn');
-  const branchSelect = document.getElementById('book-branch');
+  // 3. Contact Modal Logic
+  const contactModal = document.getElementById('contact-modal');
+  const openContactBtns = document.querySelectorAll('.open-contact-modal, .open-booking-modal');
+  const closeContactBtn = document.getElementById('close-contact-modal');
 
-  function openModal(branch) {
-    if (modal) {
-      modal.classList.add('active');
+  function openContactModal() {
+    if (contactModal) {
+      contactModal.classList.add('active');
       document.body.style.overflow = 'hidden'; // Prevent background scroll
-      
-      // Auto-select branch if provided
-      if (branch && branchSelect) {
-        branchSelect.value = branch;
-      }
     }
   }
 
-  function closeModal() {
-    if (modal) {
-      modal.classList.remove('active');
+  function closeContactModal() {
+    if (contactModal) {
+      contactModal.classList.remove('active');
       document.body.style.overflow = '';
-      
-      // Reset form and success state after animation transitions
-      setTimeout(() => {
-        if (form && successState) {
-          form.style.display = 'block';
-          successState.style.display = 'none';
-          form.reset();
-        }
-      }, 400);
     }
   }
 
-  openButtons.forEach(button => {
+  openContactBtns.forEach(button => {
     button.addEventListener('click', (e) => {
       e.preventDefault();
-      const branch = button.getAttribute('data-branch');
-      openModal(branch);
+      openContactModal();
     });
   });
 
-  if (closeButton) closeButton.addEventListener('click', closeModal);
-  if (successCloseBtn) successCloseBtn.addEventListener('click', closeModal);
+  if (closeContactBtn) closeContactBtn.addEventListener('click', closeContactModal);
 
   // Close modal when clicking outside content
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        closeModal();
+  if (contactModal) {
+    contactModal.addEventListener('click', (e) => {
+      if (e.target === contactModal) {
+        closeContactModal();
       }
-    });
-  }
-
-  // Handle Form Submission
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      const emailInput = document.getElementById('book-email');
-      if (emailInput && successEmail) {
-        successEmail.textContent = emailInput.value;
-      }
-      
-      // Animate transition to success state
-      form.style.opacity = '0';
-      setTimeout(() => {
-        form.style.display = 'none';
-        form.style.opacity = '1';
-        if (successState) {
-          successState.style.display = 'block';
-        }
-      }, 300);
     });
   }
 

@@ -22,7 +22,7 @@
       <li class="nav-item"><a href="port-barton.html">Port Barton</a></li>
       <li class="nav-item"><a href="siquijor.html">Siquijor</a></li>
     </ul>
-    <button class="nav-btn open-booking-modal">Book a Table</button>
+    <button class="nav-btn open-contact-modal">Contact Us</button>
     <button class="hamburger" id="nav-toggle" aria-label="Toggle Menu">
       <span></span>
       <span></span>
@@ -690,14 +690,14 @@
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Our Menu</a></li>
-          <li><a href="#" class="open-booking-modal">Reservations</a></li>
+          <li><a href="#" class="open-contact-modal">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h5>Contact</h5>
         <ul class="footer-links">
-          <li><a href="tel:+639171234567">+63 917 123 4567</a></li>
+          <li><a href="tel:+639171851211">+63 917 185 1211</a></li>
           <li><a href="mailto:hello@maitaibeachbar.com">hello@maitaibeachbar.com</a></li>
         </ul>
       </div>
@@ -708,81 +708,88 @@
     </div>
   </footer>
 
-  <!-- Reservation Modal -->
-  <div class="modal" id="booking-modal">
-    <!-- Same Modal Structure for unified reservations -->
-    <div class="modal-content">
-      <button class="modal-close" id="close-modal" aria-label="Close Modal">
+  <!-- Floating Messenger Button -->
+  <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="floating-messenger-btn" aria-label="Chat on Messenger">
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+  </a>
+
+  <!-- Contact Modal -->
+  <div class="modal" id="contact-modal">
+    <div class="modal-content contact-modal-width">
+      <button class="modal-close" id="close-contact-modal" aria-label="Close Modal">
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
-      <form id="reservation-form">
-        <div class="modal-header">
-          <h3>Reserve A Table</h3>
-          <p>Book your spot in paradise. Select your preferred branch below.</p>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="book-branch">Select Beach Bar Branch</label>
-          <select class="form-control" id="book-branch" name="branch" required>
-            <option value="" disabled selected>Choose a location...</option>
-            <option value="Boracay">Mai Tai Boracay (Station 2)</option>
-            <option value="Port Barton">Mai Tai Port Barton (Itaytay Beach)</option>
-            <option value="Siquijor">Mai Tai Siquijor (San Juan Cliffside)</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="book-date">Date</label>
-            <input type="date" class="form-control" id="book-date" name="date" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="book-time">Time</label>
-            <select class="form-control" id="book-time" name="time" required>
-              <option value="" disabled selected>Select time...</option>
-              <option value="11:00 AM">11:00 AM</option>
-              <option value="12:30 PM">12:30 PM</option>
-              <option value="2:00 PM">2:00 PM</option>
-              <option value="4:00 PM">4:00 PM (Pre-Sunset)</option>
-              <option value="5:30 PM">5:30 PM (Sunset Peak)</option>
-              <option value="7:00 PM">7:00 PM</option>
-              <option value="8:30 PM">8:30 PM</option>
-              <option value="10:00 PM">10:00 PM</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="book-guests">Guests</label>
-            <select class="form-control" id="book-guests" name="guests" required>
-              <option value="2" selected>2 People</option>
-              <option value="3">3 People</option>
-              <option value="4">4 People</option>
-              <option value="6">6 People</option>
-              <option value="8">8+ People (Group)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="book-phone">Phone Number</label>
-            <input type="tel" class="form-control" id="book-phone" name="phone" placeholder="+63 917..." required>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="book-name">Full Name</label>
-          <input type="text" class="form-control" id="book-name" name="name" placeholder="John Doe" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="book-email">Email Address</label>
-          <input type="email" class="form-control" id="book-email" name="email" placeholder="john@example.com" required>
-        </div>
-        <button type="submit" class="form-submit-btn">Confirm Reservation</button>
-      </form>
-      <div class="form-success-state" id="success-state">
-        <div class="success-icon">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-        </div>
-        <h4>Booking Confirmed!</h4>
-        <p>Your table in paradise is reserved. We sent a confirmation email to <strong id="success-email">john@example.com</strong>. See you soon!</p>
-        <button class="form-submit-btn" id="success-close-btn" style="margin-top: 2rem;">Awesome</button>
+      
+      <div class="modal-header">
+        <h3>Contact Mai Tai</h3>
+        <p>Get in touch with our branches directly via phone, Messenger, or Instagram.</p>
       </div>
+      
+      <div class="contact-branches-grid">
+        <!-- Boracay -->
+        <div class="contact-branch-card">
+          <div>
+            <h4 class="contact-branch-name">Boracay</h4>
+            <div class="contact-branch-details">
+              <p><strong>Address:</strong> Station 1 Beachfront, Barangay Balabag, Boracay Island</p>
+              <p><strong>Hours:</strong> 11:00 AM - 12:00 AM Daily</p>
+              <p><strong>Phone:</strong> +63 917 185 1211</p>
+            </div>
+          </div>
+          <div class="contact-branch-actions">
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn messenger-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+              Chat on Messenger
+            </a>
+            <a href="https://instagram.com/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn instagram-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Port Barton -->
+        <div class="contact-branch-card">
+          <div>
+            <h4 class="contact-branch-name">Port Barton</h4>
+            <div class="contact-branch-details">
+              <p><strong>Address:</strong> Itaytay Beach, Port Barton, San Vicente, Palawan</p>
+              <p><strong>Hours:</strong> 11:00 AM - 11:00 PM Daily</p>
+              <p><strong>Phone:</strong> +63 917 654 3210</p>
+            </div>
+          </div>
+          <div class="contact-branch-actions">
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn messenger-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+              Chat on Messenger
+            </a>
+            <a href="https://instagram.com/maitai.portbarton" target="_blank" rel="noopener noreferrer" class="contact-action-btn instagram-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Siquijor -->
+        <div class="contact-branch-card">
+          <div>
+            <h4 class="contact-branch-name">Siquijor</h4>
+            <div class="contact-branch-details">
+              <p><strong>Address:</strong> Helkat Lane, Solangon, San Juan, Siquijor</p>
+              <p><strong>Hours:</strong> 11:00 AM - 11:30 PM Daily</p>
+              <p><strong>Phone:</strong> +63 917 321 0987</p>
+            </div>
+          </div>
+          <div class="contact-branch-actions">
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn messenger-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+              Chat on Messenger
+            </a>
+            <a href="https://instagram.com/mai.tai.siquijor" target="_blank" rel="noopener noreferrer" class="contact-action-btn instagram-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 

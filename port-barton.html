@@ -98,7 +98,12 @@
   }
   </script>
 </head>
-<body>
+<body class="has-promo">
+
+  <!-- Promotion Banner Alert -->
+  <div class="promo-banner">
+    <span class="promo-highlight">Happy Hour</span> Buy 1 Get 1 Free on Select Cocktails & Local Beer daily from 2:00 PM to 7:00 PM! <span class="promo-highlight" style="margin-left: 1.5rem;">Birthday Cheers</span> Free Prosecco for bills over ₱5,000!
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar" id="main-nav">
@@ -112,7 +117,7 @@
       <li class="nav-item active"><a href="port-barton.html">Port Barton</a></li>
       <li class="nav-item"><a href="siquijor.html">Siquijor</a></li>
     </ul>
-    <button class="nav-btn open-booking-modal" data-branch="Port Barton">Book a Table</button>
+    <button class="nav-btn open-contact-modal">Contact Us</button>
     <button class="hamburger" id="nav-toggle" aria-label="Toggle Menu">
       <span></span>
       <span></span>
@@ -201,59 +206,140 @@
       <div class="menu-grid">
         <!-- Cocktails -->
         <div>
-          <h3 class="menu-category-title">Signature Drinks <span>Organic Infusions</span></h3>
+          <h3 class="menu-category-title">Signature Drinks <span>Craft Beach Cocktails</span></h3>
           <div class="menu-items-list">
             <div class="menu-item">
               <div class="menu-item-header">
-                <h4 class="menu-item-name">Palawan Honey Mai Tai</h4>
-                <span class="menu-item-price">₱290</span>
+                <h4 class="menu-item-name">Mai Tai</h4>
+                <span class="menu-item-price">₱390</span>
               </div>
-              <p class="menu-item-desc">A smooth blend of local wild honey, premium dark rum, fresh pineapple, lime juice, and a splash of triple sec.</p>
-              <span class="menu-item-tag">Local Highlight</span>
+              <p class="menu-item-desc">Dark & light rum, triple sec, lime, pineapple juice, and almond orgeat. Our namesake signature classic.</p>
+              <span class="menu-item-tag">Best Seller</span>
             </div>
             <div class="menu-item">
               <div class="menu-item-header">
-                <h4 class="menu-item-name">Basil Calamansi Smash</h4>
-                <span class="menu-item-price">₱270</span>
+                <h4 class="menu-item-name">Sexy Colada</h4>
+                <span class="menu-item-price">₱380</span>
               </div>
-              <p class="menu-item-desc">Organic sweet basil leaves muddled with local gin, fresh calamansi lime juice, and wild honey syrup.</p>
+              <p class="menu-item-desc">White rum, dark rum, rich coconut cream, and fresh pineapple juice. The ultimate beachfront indulgence.</p>
             </div>
             <div class="menu-item">
               <div class="menu-item-header">
-                <h4 class="menu-item-name">Coco Ginger Cooler</h4>
-                <span class="menu-item-price">₱260</span>
+                <h4 class="menu-item-name">Kama Sutra</h4>
+                <span class="menu-item-price">₱390</span>
               </div>
-              <p class="menu-item-desc">Freshly harvested coconut water shaken with white rum, ginger juice, lemongrass infusion, and lime juice.</p>
+              <p class="menu-item-desc">Dark rum, exotic passionfruit puree, fresh citrus, and pineapple juice. Sweet, sour, and tropical.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Sip Sip Tinggil</h4>
+                <span class="menu-item-price">₱540</span>
+              </div>
+              <p class="menu-item-desc">A premium sharing cocktail: dark rum, tequila, pastis, fresh mango puree, citrus, and pineapple juice.</p>
+              <span class="menu-item-tag">Sharing Drink</span>
             </div>
           </div>
         </div>
 
         <!-- Food -->
         <div>
-          <h3 class="menu-category-title">Ocean-To-Table <span>Daily Fresh Catch</span></h3>
+          <h3 class="menu-category-title">Charcoal Grill <span>Fresh Beachside Eats</span></h3>
           <div class="menu-items-list">
             <div class="menu-item">
               <div class="menu-item-header">
-                <h4 class="menu-item-name">Grilled Palawan Snapper</h4>
-                <span class="menu-item-price">₱520</span>
+                <h4 class="menu-item-name">Spicy BBQ Marinated Pork</h4>
+                <span class="menu-item-price">₱360</span>
               </div>
-              <p class="menu-item-desc">Whole red snapper stuffed with lemongrass, ginger, onions, wrapped in a banana leaf and grilled over coconut charcoal.</p>
-              <span class="menu-item-tag">Sea-To-Table</span>
+              <p class="menu-item-desc">Pork ribs or shoulder marinated in a bold blend of soy, golden honey, and fresh lemon juice, fired up with red chili, smoked paprika, and cumin.</p>
+              <span class="menu-item-tag">Staff Pick</span>
             </div>
             <div class="menu-item">
               <div class="menu-item-header">
-                <h4 class="menu-item-name">Coconut Chicken Adobo</h4>
-                <span class="menu-item-price">₱340</span>
-              </div>
-              <p class="menu-item-desc">Organic chicken slow-braised in vinegar, soy sauce, garlic, and fresh black peppercorns, finished with a rich coconut cream reduction.</p>
-            </div>
-            <div class="menu-item">
-              <div class="menu-item-header">
-                <h4 class="menu-item-name">Kinilaw na Tanigue</h4>
+                <h4 class="menu-item-name">Grilled Squid</h4>
                 <span class="menu-item-price">₱390</span>
               </div>
-              <p class="menu-item-desc">Philippine ceviche: raw local Tanigue fish cubes cured in vinegar, calamansi, ginger, onions, red bell pepper, and fresh coconut milk.</p>
+              <p class="menu-item-desc">Fresh squid grilled to perfection, charred and caramelized on the outside, tender inside. Served with garlic chili soy dipping sauce.</p>
             </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">BBQ Chicken Teriyaki</h4>
+                <span class="menu-item-price">₱380</span>
+              </div>
+              <p class="menu-item-desc">Flame-grilled chicken with sweet teriyaki glaze, caramelized and charred. Served with fresh greens and lemon.</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-name">Grilled Fish</h4>
+                <span class="menu-item-price">₱420</span>
+              </div>
+              <p class="menu-item-desc">Freshly caught whole fish, seasoned with garlic, lemon & herbs, grilled over open charcoal and served on a bed of crisp greens.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Events & Special Offers Section -->
+  <section class="section section-dark" id="events-promos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Happening Now</span>
+        <h2 class="section-title">Weekly Events & Offers</h2>
+        <p class="section-desc">Don't miss out on our special promotions and themed activities at our Port Barton location.</p>
+      </div>
+      
+      <div class="events-grid">
+        <!-- Promo 1: Happy Hour -->
+        <div class="event-card">
+          <div class="event-image-placeholder">
+            <svg class="event-image-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C11.45 12.9 11 13.5 11 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H5c0-3.87 3.13-7 7-7s7 3.13 7 7c0 1.11-.45 2.11-1.07 2.75z"/></svg>
+            <span class="event-badge">Buy 1 Get 1</span>
+            <span class="event-time-badge">Daily • 2:00 PM - 7:00 PM</span>
+          </div>
+          <div class="event-card-content">
+            <div>
+              <h3 class="event-card-title">Daily Happy Hour</h3>
+              <p class="event-card-desc">Double the tropical goodness! Buy 1 and get 1 free on select cocktails and local beer bottles.</p>
+              <div class="event-card-specials">
+                <div class="event-specials-title">Happy Hour Specials</div>
+                <ul class="event-specials-list">
+                  <li><span>Bourbon Coca Cola</span> <span>₱360</span></li>
+                  <li><span>Cuba Libre / Gin & Tonic</span> <span>₱290</span></li>
+                  <li><span>Margarita / Watermelon Daiquiri</span> <span>₱390</span></li>
+                  <li><span>Local Beer / Bucket of 6 with fries</span> <span>₱180 / ₱590</span></li>
+                  <li><span>Red or White Wine</span> <span>₱280</span></li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="event-card-cta">
+              Chat on Messenger
+            </a>
+          </div>
+        </div>
+        
+        <!-- Promo 2: Island Hop & Dine -->
+        <div class="event-card">
+          <div class="event-image-placeholder">
+            <svg class="event-image-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.99L19.53 19H4.47L12 5.99z"/></svg>
+            <span class="event-badge">Island Hop & Dine</span>
+            <span class="event-time-badge">Daily Tours</span>
+          </div>
+          <div class="event-card-content">
+            <div>
+              <h3 class="event-card-title">Island Hop & Dine</h3>
+              <p class="event-card-desc">Explore the stunning islands, reefs, and crystal-clear waters of Port Barton, and claim sunset coconut juice, dinner, and cocktails at Mai Tai.</p>
+              <div class="event-card-specials">
+                <div class="event-specials-title">Tour Packages</div>
+                <ul class="event-specials-list">
+                  <li><span>Sharing Boat Tour</span> <span>₱2,099 / person</span></li>
+                  <li><span>Private Boat Tour</span> <span>₱3,950 / person</span></li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="event-card-cta">
+              Book a Tour
+            </a>
           </div>
         </div>
       </div>
@@ -383,15 +469,15 @@
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="port-barton.html#menu">Our Menu</a></li>
-          <li><a href="#" class="open-booking-modal">Reservations</a></li>
+          <li><a href="#" class="open-contact-modal">Contact Us</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h5>Contact</h5>
         <ul class="footer-links">
-          <li><a href="tel:+639171234567">+63 917 123 4567</a></li>
-          <li><a href="mailto:hello@maitaibeachbar.com">hello@maitaibeachbar.com</a></li>
+          <li><a href="tel:+639176543210">+63 917 654 3210</a></li>
+          <li><a href="mailto:palawan@maitaibeachbar.com">palawan@maitaibeachbar.com</a></li>
         </ul>
       </div>
     </div>
@@ -405,96 +491,88 @@
     </div>
   </footer>
 
-  <!-- Floating Booking Button -->
-  <button class="floating-booking-btn open-booking-modal" data-branch="Port Barton">
-    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-    Book a Table
-  </button>
+  <!-- Floating Messenger Button -->
+  <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="floating-messenger-btn" aria-label="Chat on Messenger">
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+  </a>
 
-  <!-- Reservation Modal -->
-  <div class="modal" id="booking-modal">
-    <div class="modal-content">
-      <button class="modal-close" id="close-modal" aria-label="Close Modal">
+  <!-- Contact Modal -->
+  <div class="modal" id="contact-modal">
+    <div class="modal-content contact-modal-width">
+      <button class="modal-close" id="close-contact-modal" aria-label="Close Modal">
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
       
-      <!-- Form State -->
-      <form id="reservation-form">
-        <div class="modal-header">
-          <h3>Reserve A Table</h3>
-          <p>Book your spot in paradise. Select your preferred branch below.</p>
-        </div>
-        
-        <div class="form-group">
-          <label class="form-label" for="book-branch">Select Beach Bar Branch</label>
-          <select class="form-control" id="book-branch" name="branch" required>
-            <option value="Boracay">Mai Tai Boracay (Station 2)</option>
-            <option value="Port Barton" selected>Mai Tai Port Barton (Itaytay Beach)</option>
-            <option value="Siquijor">Mai Tai Siquijor (San Juan Cliffside)</option>
-          </select>
-        </div>
-        
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="book-date">Date</label>
-            <input type="date" class="form-control" id="book-date" name="date" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="book-time">Time</label>
-            <select class="form-control" id="book-time" name="time" required>
-              <option value="" disabled selected>Select time...</option>
-              <option value="11:00 AM">11:00 AM</option>
-              <option value="12:30 PM">12:30 PM</option>
-              <option value="2:00 PM">2:00 PM</option>
-              <option value="4:00 PM">4:00 PM (Pre-Sunset)</option>
-              <option value="5:30 PM">5:30 PM (Sunset Peak)</option>
-              <option value="7:00 PM">7:00 PM</option>
-              <option value="8:30 PM">8:30 PM</option>
-              <option value="10:00 PM">10:00 PM</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="book-guests">Guests</label>
-            <select class="form-control" id="book-guests" name="guests" required>
-              <option value="2" selected>2 People</option>
-              <option value="3">3 People</option>
-              <option value="4">4 People</option>
-              <option value="6">6 People</option>
-              <option value="8">8+ People (Group)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="book-phone">Phone Number</label>
-            <input type="tel" class="form-control" id="book-phone" name="phone" placeholder="+63 917..." required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="book-name">Full Name</label>
-          <input type="text" class="form-control" id="book-name" name="name" placeholder="John Doe" required>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="book-email">Email Address</label>
-          <input type="email" class="form-control" id="book-email" name="email" placeholder="john@example.com" required>
-        </div>
-
-        <button type="submit" class="form-submit-btn">Confirm Reservation</button>
-      </form>
-
-      <!-- Success State -->
-      <div class="form-success-state" id="success-state">
-        <div class="success-icon">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-        </div>
-        <h4>Booking Confirmed!</h4>
-        <p>Your table in paradise is reserved. We sent a confirmation email to <strong id="success-email">john@example.com</strong>. See you soon!</p>
-        <button class="form-submit-btn" id="success-close-btn" style="margin-top: 2rem;">Awesome</button>
+      <div class="modal-header">
+        <h3>Contact Mai Tai</h3>
+        <p>Get in touch with our branches directly via phone, Messenger, or Instagram.</p>
       </div>
-
+      
+      <div class="contact-branches-grid">
+        <!-- Boracay -->
+        <div class="contact-branch-card">
+          <div>
+            <h4 class="contact-branch-name">Boracay</h4>
+            <div class="contact-branch-details">
+              <p><strong>Address:</strong> Station 1 Beachfront, Barangay Balabag, Boracay Island</p>
+              <p><strong>Hours:</strong> 11:00 AM - 12:00 AM Daily</p>
+              <p><strong>Phone:</strong> +63 917 185 1211</p>
+            </div>
+          </div>
+          <div class="contact-branch-actions">
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn messenger-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+              Chat on Messenger
+            </a>
+            <a href="https://instagram.com/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn instagram-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Port Barton -->
+        <div class="contact-branch-card">
+          <div>
+            <h4 class="contact-branch-name">Port Barton</h4>
+            <div class="contact-branch-details">
+              <p><strong>Address:</strong> Itaytay Beach, Port Barton, San Vicente, Palawan</p>
+              <p><strong>Hours:</strong> 11:00 AM - 11:00 PM Daily</p>
+              <p><strong>Phone:</strong> +63 917 654 3210</p>
+            </div>
+          </div>
+          <div class="contact-branch-actions">
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn messenger-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+              Chat on Messenger
+            </a>
+            <a href="https://instagram.com/maitai.portbarton" target="_blank" rel="noopener noreferrer" class="contact-action-btn instagram-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Siquijor -->
+        <div class="contact-branch-card">
+          <div>
+            <h4 class="contact-branch-name">Siquijor</h4>
+            <div class="contact-branch-details">
+              <p><strong>Address:</strong> Helkat Lane, Solangon, San Juan, Siquijor</p>
+              <p><strong>Hours:</strong> 11:00 AM - 11:30 PM Daily</p>
+              <p><strong>Phone:</strong> +63 917 321 0987</p>
+            </div>
+          </div>
+          <div class="contact-branch-actions">
+            <a href="https://m.me/maitaibeachbar" target="_blank" rel="noopener noreferrer" class="contact-action-btn messenger-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.14 2 11.25c0 2.91 1.45 5.51 3.73 7.2L5.67 22l3.41-1.87c.92.26 1.9.4 2.92.4 5.5 0 10-4.14 10-9.25S17.5 2 12 2zm1.14 12.18l-2.61-2.79-5.07 2.79 5.56-5.91 2.68 2.79 5-2.79-5.56 5.92z"/></svg>
+              Chat on Messenger
+            </a>
+            <a href="https://instagram.com/mai.tai.siquijor" target="_blank" rel="noopener noreferrer" class="contact-action-btn instagram-btn">
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 

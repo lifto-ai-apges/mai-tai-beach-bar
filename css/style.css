@@ -1452,3 +1452,380 @@ select.form-control {
     transform: translateY(0);
   }
 }
+
+/* ─── Promotion Banner Alert ─── */
+.promo-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: var(--sunset-gradient);
+  color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1010;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.promo-banner .promo-highlight {
+  background-color: rgba(7, 12, 16, 0.2);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+body.has-promo {
+  padding-top: calc(var(--nav-height) + 35px);
+}
+
+body.has-promo .navbar {
+  top: 35px;
+}
+
+/* ─── Contact Modal Content ─── */
+.contact-branches-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-branches-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact-branch-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.contact-branch-card:hover {
+  border-color: var(--primary-gold);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.contact-branch-name {
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  color: var(--primary-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.5rem;
+}
+
+.contact-branch-details {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.contact-branch-details p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-branch-details strong {
+  color: var(--text-primary);
+}
+
+.contact-branch-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+.contact-action-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-primary);
+}
+
+.contact-action-btn.messenger-btn {
+  background: #0084FF;
+  border-color: transparent;
+  color: #fff;
+}
+
+.contact-action-btn.messenger-btn:hover {
+  background: #006bde;
+  box-shadow: 0 4px 15px rgba(0, 132, 255, 0.4);
+}
+
+.contact-action-btn.instagram-btn {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.contact-action-btn.instagram-btn:hover {
+  box-shadow: 0 4px 15px rgba(214, 36, 159, 0.4);
+  opacity: 0.95;
+}
+
+.modal-content.contact-modal-width {
+  max-width: 850px;
+}
+
+/* ─── Floating Messenger Icon ─── */
+.floating-messenger-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  background: #0084FF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0, 132, 255, 0.45);
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  text-decoration: none;
+}
+
+.floating-messenger-btn svg {
+  width: 26px;
+  height: 26px;
+}
+
+.floating-messenger-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 132, 255, 0.6);
+  background: #0074e0;
+}
+
+@media (max-width: 768px) {
+  .floating-messenger-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 48px;
+    height: 48px;
+  }
+  .floating-messenger-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+  body.has-promo .navbar {
+    top: 0;
+  }
+  body.has-promo {
+    padding-top: var(--nav-height);
+  }
+  .promo-banner {
+    position: relative;
+    height: auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+/* ─── Events & Offers Section ─── */
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .events-grid.triple {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.event-card {
+  background: #0b1218;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-gold);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+}
+
+.event-image-placeholder {
+  height: 180px;
+  background: linear-gradient(135deg, rgba(255, 94, 54, 0.15), rgba(212, 175, 55, 0.05));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.event-image-icon {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  opacity: 0.04;
+  color: var(--primary-gold);
+  transform: rotate(-15deg);
+}
+
+.event-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--sunset-gradient);
+  color: var(--bg-dark);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-time-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  color: var(--text-primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.event-card-content {
+  padding: 1.75rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-card-title {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.event-card-desc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.event-card-specials {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px dashed rgba(212, 175, 55, 0.15);
+  border-radius: 6px;
+  padding: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.event-specials-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-gold);
+  margin-bottom: 0.4rem;
+}
+
+.event-specials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.event-specials-list li {
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted rgba(255,255,255,0.03);
+  padding-bottom: 0.25rem;
+}
+
+.event-specials-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.event-card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid var(--primary-gold);
+  color: var(--primary-gold);
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.event-card-cta:hover {
+  background: var(--sunset-gradient);
+  color: var(--bg-dark);
+  border-color: transparent;
+  box-shadow: 0 5px 15px rgba(255, 94, 54, 0.3);
+}
+
